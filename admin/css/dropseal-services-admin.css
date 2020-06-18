@@ -1,0 +1,411 @@
+/**
+ * All of the CSS for your admin-specific functionality.
+ */
+
+.dss_page_header {
+    padding-top: 10px;
+}
+
+.dss_title {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.dss_sub_menu_title {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.dss_edit_title {
+    width: calc(20% - 5px);
+}
+
+.dss_btn {
+    font-size: 25px;
+    text-decoration: none;
+    outline: none !important;
+    box-shadow: none !important;
+    
+    border: none;
+}
+
+.dss_delete_button {
+    color: red; 
+    cursor: pointer;
+}
+
+.dss_info_button {
+    color: royalblue;
+}
+
+.dss_edit_button {
+    color: #444;
+}
+
+.dss_error_border {
+    border: 1px solid red !important;
+}
+
+
+/**
+ * Admin Settings Tab.
+ */
+.dss_settings_container {
+    display: flex;
+}
+
+.limitations_container > div,
+.payments_container > div {
+    width: 15%;
+}
+
+.limitations_container > div input[type="text"],
+.payments_container > div input[type="text"] {
+    width: 60%;
+}
+
+.blocking_container > div {
+    width: 30%;
+}
+
+.blocking_container > div input[type="text"] {
+    width: 65%;
+    box-shadow: none; 
+}
+
+.blocking_container > div > div{
+    width: 50%;
+    padding: 5px;
+}
+
+.dss_lock_exists {
+    visibility: hidden;
+    color: red;
+}
+
+
+
+/**
+ * Orders
+ */
+.dss_delete_selected_orders {
+    margin-left: 2%;
+    cursor: pointer;
+    outline: none;
+} 
+
+.dss_orders_container .dss_orders_filter {
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+    background-color: unset;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    margin-left: 70%;  
+}
+
+.dss_orders_container .dss_orders_filter:focus {
+    box-shadow: unset;
+    border-bottom: 1px solid #007cba;
+}
+ 
+.dss_orders_container table {
+    width: 95%;
+    margin: auto;
+    font-size: 15px;
+    border-color: lightgray;
+    table-layout: fixed;
+    margin-top: 10px;
+}
+
+.dss_orders_container thead {
+    background-color: gainsboro;
+}
+
+.dss_orders_container table td:nth-child(1),
+.dss_orders_container table td:nth-child(2) {
+	width:4%;
+}
+
+.dss_orders_container table td:nth-child(3),
+.dss_orders_container table td:nth-child(4),
+.dss_orders_container table td:nth-child(6),
+.dss_orders_container table td:nth-child(7) {
+    width: 12%;
+}
+
+.dss_orders_container table td:nth-child(5) {
+	width: 25%;
+}
+
+
+
+/**
+ * Order
+ */
+.dss_order_container {
+    width: 60%;
+    margin: auto;
+}
+
+.dss_order_status {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.dss_order_price {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 5%;
+    margin-right: 2px;
+}
+
+.dss_order_price input {
+   width: 100%;
+}
+
+.dss_order_container textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.dss_order_wrapper,
+.dss_recipient_header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.dss_order_wrapper > div,
+.dss_recipient_header > div {
+    width: 50%;
+    padding: 0 2%;
+    position: relative;
+}
+
+.dss_order_wrapper select,
+.dss_order_wrapper input {
+    width: 100%;
+	max-width: unset;
+}
+
+.dss_recipient_wrapper {
+    padding-top: 10px;
+}
+
+.dss_upload_file {
+    vertical-align: unset;
+}
+
+.dss_upload_file img,
+.dss_add_link img {
+    width: 25px;
+    vertical-align: bottom;
+}
+
+.dss_upload_file input {
+    display: none;
+    pointer-events: none;
+    user-select: none;
+} 
+
+.dss_upload_file_name {
+    color: #0073aa;
+}
+
+.dss_upload_file_name a {
+    box-shadow: unset;
+}
+
+.dss_delete_file_btn {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.dss_recipient_btn {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    padding-left: 5px;
+}
+
+.dss_add_recipient {
+    color: #007cba;
+}
+
+.dss_delete_recipient {
+    color:red;
+}
+
+.dss_recipient_wrapper:not(:last-child) .dss_delete_recipient {
+    display: none;
+}
+
+/* Modal Box */
+.dss_links_modal {
+    display: none; 
+    position: fixed;
+    z-index: 999; 
+    left: 160px;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 90px 0;
+    overflow: auto;
+}
+  
+.dss_links_modal_content {
+    position: relative;
+    max-width: 425px;
+    min-height: 250px;
+    padding: 30px 0;
+    margin-left: 27%;
+    background-color: #282828;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.dss_links_modal_close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8d8d8d;
+}
+
+.dss_links_modal_title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+.dss_links_modal_wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.dss_links_modal_content input {
+    width: 80%;
+    background-color: rgba(255,255,255,0.1);
+    color: #eaeaea;
+}
+
+.dss_links_modal_btn {
+    font-size: 30px;
+    font-weight: lighter;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+}
+
+.dss_add_link_modal {
+    color: #007cba;
+}
+
+.dss_delete_link_modal {
+    color: tomato;
+}
+
+.dss_links_modal_wrapper:not(:last-child) .dss_delete_link_modal {
+    display: none;
+}
+
+.dss_links_modal_confirm {
+    width: 40%;
+    border: 1px solid #8d8d8d;
+    padding: 5px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dss_links_modal_confirm:hover {
+    color: #1d1d1d;
+    background-color: #f6f6f6;
+}
+
+
+
+/**
+ * Messages Tab.
+ */
+.messages_container > div {
+    width: 25%;
+}
+
+.messages_container > div textarea {
+    width: 90%;
+    min-height: 100px;
+}
+
+
+
+/**
+ * Twilio Tab.
+ */
+.twilio_container > div {
+    width: 30%;
+}
+
+.twilio_container > div input {
+    width: 90%;
+}
+
+.twilio_container > div textarea {
+    width: 90%;
+    min-height: 200px;
+}
+
+
+
+/**
+ * Mobile carriers Tab .
+ */
+.mobile_carriers_container {
+    width: 60%;
+    border-color: lightgray;
+}
+
+/**
+ * Info Tab .
+ */
+.dss_info_container > div {
+    width: 20%;   
+}
+
+.dss_info_container > div input {
+    width: 90%;   
+}
+
+.dss_info_container > div > div {
+    margin: 0 0 2px 2px;   
+}
+
+.dss_sending_error span {
+    color: red;
+}
+
+.dss_order_info_container textarea {
+    width: 58%;
+    min-height: 200px;
+    margin-right: 2%;
+}
+
+.dss_order_info_container > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dss_order_info_container > div:first-of-type {
+    width: 20%;
+}
+
+
+
+

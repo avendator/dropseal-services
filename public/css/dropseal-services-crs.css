@@ -1,0 +1,381 @@
+input:focus, textarea:focus, select:focus {
+    outline: aliceblue;
+    border: 1px solid #007cba;
+}
+option {
+    border: 1px solid #007cba;
+}
+/** CRS Service Form **/
+.dss-crs-container {
+    width: 700px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+.dss-message-block {
+    width: 700px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.dss-message-block textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 200px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0 0 -9px 0;
+}
+.crs-payment-line,
+.dss-message-block hr {
+    width: 40%;
+    margin: 20px 0 5px 0;
+    background-color: #0E3189;
+    border-bottom: 1px solid #0E3189;
+}
+@media (max-width: 768px) {
+    .dss-crs-container {
+        padding: 0 0 0 3%;
+    }
+    .dss-crs-container,
+    .dss-message-block {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .dss-message-block textarea {
+        border-radius: 0;
+    }
+    .crs-payment-line,
+    .dss-message-block hr {
+        width: 100%;
+    }   
+}
+/** upload file **/
+.dss-attachement {
+    position: relative;
+    background: #C0C0C0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+.dss-attachement-wrap {
+    display: flex;
+}
+.dss-attachement-wrap label {
+    width: 50%;
+}
+.dss-upload-file {
+    cursor: pointer;
+}
+.dss-upload-file img {
+    width: 25px;
+    vertical-align: bottom;
+}
+.dss-upload-file input {
+    display: none;
+    pointer-events: none;
+    user-select: none;
+} 
+.dss-upload-file-name {
+    color: #0073aa;
+}
+.dss-upload-file-name a {
+    box-shadow: unset;
+}
+.dss-delete-file {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+.max-size-file-warning {
+    display: block;
+    color: #808080;
+    font-size: 90%;
+}
+/** add links **/
+.sms-url-icon {
+    width: 25px;
+    vertical-align: middle;
+}
+.dss-url-wrapper {
+    cursor: pointer;
+}
+.dss-add-links-modal {
+    display: none; 
+    position: fixed;
+    z-index: 999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(255,255,255,0.8);
+    padding: 90px 0;
+    overflow: auto;
+}
+.dss-add-links-modal-content {
+    position: relative;
+    max-width: 425px;
+    min-height: 250px;
+    padding: 30px 0;
+    margin-left: 37%;
+    background-color: #282828;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+.dss-links-modal-close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8d8d8d;
+}
+.dss-links-modal-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+.dss-add-links-modal-content input {
+    width: 80%;
+    background-color: rgba(255,255,255,0.1);
+    color: #eaeaea;
+    margin-bottom: 20px;
+}
+.dss-links-wrapper {
+    position: relative;
+}
+.dss-links-btn {
+    font-size: 30px;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #007cba;
+    position: absolute;
+    right: 15px;
+}
+.sms-add-links-btn {
+    color: #007cba;
+}
+.dss-delete-links-btn {
+    color: tomato;
+}
+.dss-links-wrapper:not(:last-child) .dss-delete-links-btn {
+    display: none;
+}
+.dss-confirm-links-btn {
+    width: 40%;
+    border: 1px solid #8d8d8d;
+    padding: 5px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dss-confirm-links-btn:hover {
+    color: #1d1d1d;
+    background-color: #f6f6f6;
+}
+.link-error {
+    color: #d8512d;
+    margin-left: 10px;
+}
+@media (max-width: 767px) {
+    .dss-attachement {
+        border-radius: 0;
+    }
+    .dss-add-links-modal {
+        width: 100%;
+    }
+}
+.dss-field-title,
+.dss-url-wrapper,
+.sms-url-text,
+#crs-ampm {
+    color: #0E3189;
+}
+input[type="text"]#dss-input-date {
+    border-radius: 5px;
+    color: #808080;
+}
+.dss-date {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#dss-ampm {
+    font-size: large;
+}
+.dss-datetime {
+    display: inline-block;
+    width: 320px;
+}
+.dss-crs-datetime-container {
+    margin: 15px 0;
+}
+.calendar-icon-wrap {
+    vertical-align: top;
+    cursor: pointer;
+}
+.calendar-icon-wrap img{
+    width: 45px;
+}
+.crs-payment-buttons,
+.crs-checkout {
+    width: 40%;
+}
+.crs-payment-buttons div:first-child {
+    display: inline-flex;
+    width: 130px;
+}
+@media (max-width: 768px) {
+    .dss-date {
+        text-align: justify;
+    }
+    .dss-datetime {
+        width: 100%;
+    }
+    .calendar-icon-wrap img{
+        display: none;
+    }    
+}
+
+button[type="submit"]#crs-submit.dss-send {
+    padding: 0;
+}
+
+
+/** CRS Service Form Info / Edit **/
+.dss-file-info,
+.dss-links-info {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0; 
+}
+.dss-file-info div:first-child,
+.dss-links-info div:first-child {
+    width: 20%;
+}
+.dss-file-info div:last-child,
+.dss-links-info div:last-child {
+    width: 80%;
+}
+.dss-datetime-info {
+    width: 45%;
+}
+.crs-checkout-container {
+    display: flex;
+}
+.dss-checkout-info {
+    width: 50%;
+    display: flex;
+}
+.dss-checkout-info div {
+    width: 50%;
+}
+.dss-crs-submit-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 45px;
+}
+.crs-applepay-wrap {
+    display: none;
+}
+.crs-submit-wrap,
+.crs-back-wrap {
+    text-align: right;
+    padding: 30px;
+}
+.crs-back-cancel-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+.crs-back-cancel-wrap div {
+    width: 50%;
+}
+button[type="submit"].dss-send {
+    background: #191970;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    height: 40px; 
+    width: 200px;
+}
+button[type="submit"].dss-cancel {
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    line-height: 0;
+    height: 40px; 
+    width: 200px;
+    background: #f9f9f9;
+    border: 1px solid #191970;   
+    color: #191970;
+}
+
+/** Apple Pay button **/
+button[type="submit"].stripe-button-el {
+    background: #191970;
+    padding: 0;
+    width: 200px;
+    border-radius: 10px;
+    outline: none;
+}
+.stripe-button-el:not(:disabled):active,
+.stripe-button-el.active,
+.stripe-button-el:not(:disabled):active span,
+.stripe-button-el.active span {
+    background: #191970!important;
+}
+
+button[type="submit"].stripe-button-el span {
+    background: #191970;
+    font-size: 13px;
+    height: 40px;
+    padding-top: 6px;
+}
+
+/** PayPal button **/
+input[type="image"] {
+    height: 40px;
+    border: 1px solid #191970;
+    border-radius: 10px;
+    padding: 0;
+    background: #191970;
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .crs-submit-wrap,
+    .crs-back-wrap {
+        text-align: center;
+    }
+    button[type="submit"]#crs-submit.dss-send,
+    button[type="submit"]#crs-back.dss-cancel,
+    button[type="submit"]#crs-cancel.dss-cancel,
+    input[type="image"],
+    button[type="submit"].stripe-button-el,
+    button[type="submit"].stripe-button-el span {
+        height: 50px;
+    }
+    button[type="submit"].stripe-button-el span {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .dss-crs-submit-container {
+        justify-content: center;
+    }
+    .crs-paypal-wrap,
+    .crs-applepay-wrap,
+    .crs-cancel-wrap {
+        width: 50%;
+    }
+}
+@media (max-width: 510px) {
+    button[type="submit"]#crs-cancel.dss-cancel,
+    button[type="submit"]#crs-back.dss-cancel.crs-back,
+    input[type="image"] {
+        width: 80%;
+    }
+}

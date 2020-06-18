@@ -1,0 +1,283 @@
+/**-------------------------------------------------------------
+ # Pages - Content
+ -------------------------------------------------------------*/
+h1.dss-title {
+	text-align: center;
+	font-family: "Roboto", Sans-serif;
+    color: #7a7a7a;
+}
+p.dss-text {
+	font-family: "Roboto", Sans-serif;
+    color: #7a7a7a;
+}
+.dss-big-img {
+	margin-top: -25px;
+}
+.dss-login-link {
+    width: 150px;
+    float: right;
+}
+@media (min-width: 320px) {
+    .dss-big-img {
+        margin: 0;        
+    }
+}
+input:focus, textarea:focus, select:focus {
+    outline: aliceblue;
+    border: 1px solid #007cba;
+}
+option {
+    border: 1px solid #007cba;
+}
+/**-------------------------------------------------------------
+ # END Pages - Content
+ --------------------------------------------------------------*/
+/**-------------------------------------------------------------
+ # Registratin / Login / Forgot & Reset Password Forms
+ --------------------------------------------------------------*/
+.dss-register-notice {
+    text-align: center;
+    height: 80px;
+    margin-top: 20px;
+}
+.dss-registration-form div,
+.dss-login-form div {
+    margin-top: 15px;
+}
+button[type="submit"].dss-sign {
+    background: #191970;
+    width: 200px;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0;
+    outline: none;
+}
+.dss-sign-links div {
+    display: inline-block;
+}
+.dss-registration-form,
+.dss-login-form,
+.dss-forgot-pass-form,
+.dss-reset-pass-form {
+    width: 500px;
+}
+.dss-user-notice {
+    height: 65px;
+    margin-top: 30px;
+    text-align: center;
+}
+.dss-user-notice div {
+    margin: auto;
+}
+.errno,
+.message-error {
+    color: #d8512d;
+}
+.change-password-container {
+    margin-top: 20px;
+}
+.dss-registration-form div a,
+.dss-login-form div a {
+    margin-right: 30px;
+}
+.dss-registration-form,
+.dss-forgot-pass-form,
+.dss-reset-pass-form {
+    margin: auto;	
+}
+.dss-login-form {
+    margin-top: 50px;
+    margin: auto;
+}
+.dss-forgot-pass-form h3 {
+    text-align: center;
+}
+.dss-forgot-pass-form div {
+    margin: 15px 0;
+}
+.dss-forgot-pass-form p {
+    text-align: justify;
+}
+.oneall_social_login_label label {
+    font-size: 90%;
+}
+.dss-login-error {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    color: #d8512d;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .dss-registration-form,
+    .dss-login-form,
+    .dss-forgot-pass-form,
+    .dss-reset-pass-form {
+        width: 100%;
+    }
+    .dss-reset-pass-form h3 {
+        text-align: center;
+    }
+    .dss-login-error {
+        left: 5%;
+    }
+    .dss-reg-submit,
+    .dss-login-submit,
+    .lostpassword-submit,
+    .resetpass-submit {
+        text-align: center;
+    }
+    button[type="submit"].dss-sign {
+        height: 50px;
+        width: 90%;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .dss-sign-links {
+        font-size: 120%;        
+    }
+    .dss-sign-links div:first-child {
+        width: 40%;
+    }
+}
+/**-------------------------------------------------------------
+ # Account Page
+ --------------------------------------------------------------*/
+.dashboard-menu-container {
+    width: 768px;
+    margin: auto;
+}
+.dss-account-menu-select-mob {
+    display: none;
+}
+.dashboard-menu-container ul,
+.dss-account-menu-select {
+    display: inline-block;
+}
+.dashboard-menu-container ul li {
+    display: inline;
+    margin: 0 20px;
+}
+.fas.fa-chevron-right {
+    margin-left: 10px;
+}
+.dss-account-notification {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.dss-user-profile-container {
+    width: 700px;
+    margin: auto;
+}
+.user-profile-block {
+    display: inline-block;
+    width: 500px;
+}
+.user-profile-block div {
+    margin-top: 15px;
+}
+.change-password-container {
+    margin-top: 50px;
+}
+.dss-confirm-pass {
+    display: none;
+}
+.crs-mobile-orders-container,
+.sms-mobile-orders-container,
+.dss-mobile-payment-orders-container {
+    display: none;
+}
+.dss-payment-orders-table,
+.sms-orders-table,
+.crs-orders-table {
+    width: 800px;
+    margin: auto;
+}
+.crs-orders-table,
+.crs-mobile-orders-container {
+    margin-top: 100px;
+}
+@media (max-width: 767px) {
+    .dashboard-menu-container {
+        display: flex;
+        height: 140px;
+        width: 100%;
+    }
+    .dashboard-menu-container ul {
+        display: none;
+        list-style-type: none;
+        margin: 40px 0 0 0;
+    }
+    .dashboard-menu-container ul li {
+        display: block;
+        margin: 10px 10px 10px 20px;
+    }
+    .dss-account-menu-select-mob {
+        display: block;
+        padding: 20px 20px 0 20px;
+    }
+    .dss-account-menu-select {
+        display: none;
+    }
+    .dss-user-profile-container,
+    .user-profile-block {
+        width: 100%;
+    }
+    .sms-orders-table,
+    .crs-orders-table,
+    .dss-payment-orders-table {
+        display: none;
+    }
+    .crs-mobile-orders-container,
+    .sms-mobile-orders-container,
+    .dss-mobile-payment-orders-container {
+        display: block;
+        width: 100%;
+    }
+    .dss-mobile-payment-orders-wrap,
+    .dss-mobile-orders-wrap {
+        margin-top: 3%;
+        border: 1px solid #007cba;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px
+    }
+    .dss-orders-payment-row,
+    .dss-orders-row {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+    .dss-orders-row div {
+        width: 45%;
+    }
+    .dss-orders-payment-row div:first-child {
+        width: 60%;
+        text-align: left;
+    }
+}
+.dss-count-recipients {
+	padding: 0 10px 0 0;
+    color: #007cba;
+}
+.order-delete {
+    cursor: pointer;
+}
+.dss-notification-container {
+    height: 100px;
+    text-align: center;
+}
+.dss-empty-orders {
+    margin: 20px;
+    text-align: center;
+}
+.dss-eye {
+    width: 25px;
+}
+ /**-------------------------------------------------------------
+ # End Account Page
+ --------------------------------------------------------------*/
